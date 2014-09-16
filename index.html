@@ -6,26 +6,35 @@ layout: default
   <div class="Hero-content columns small-12">
     <h1>Make the Time</h1>
     <p class="lead">Enjoy your delicious dinner with friends, family, yourself. Be part of the movement and take the challenge now!</p>
-    <form class="Take-challenge row">
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <form  action="//thecausemopolitan.us2.list-manage.com/subscribe/post?u=2822bb5152f202cad2ab47826&amp;id=35861f8cc0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate Take-challenge row" target="_blank" novalidate>
       <div class="columns small-10 small-offset-1 medium-5 medium-offset-1">
-        <input type="email" placeholder="email address">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
       </div>
       <div class="columns small-10 small-offset-1 medium-5 medium-offset-0 end">
-        <button type="submit" class="button [radius round]">Take the Challenge</button>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="b_2822bb5152f202cad2ab47826_35861f8cc0" tabindex="-1" value="">
+        </div>
+        <div class="clear">
+          <input type="submit" value="Take the Challenge" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
       </div>
-    </form>
+    </form><!--End mc_embed_signup-->
   </div>
 
   <nav>
     <div class="Content columns small-12 medium-10 medium-centered">
-      <a href="#" class="columns small-4">What is the <span><br></span>Challenge?</a>
-      <a href="#" class="columns small-4">The <span><br></span>Inspiration</a>
-      <a href="#" class="columns small-4">Join The <span><br></span>Conversation</a>
+      <a href="#challenge" class="columns small-4">What is the <span><br></span>Challenge?</a>
+      <a href="#inspiration" class="columns small-4">The <span><br></span>Inspiration</a>
+      <a href="#conversation" class="columns small-4">Join The <span><br></span>Conversation</a>
     </div>
   </nav>
 </section>
 
-<section class="row Challenge">
+<section id="challenge" class="row Challenge">
   <div class="Content columns small-12 medium-10 medium-centered">
     <h2>What is the Challenge?</h2>
     <ol class="Circle-numbers row">
@@ -46,12 +55,12 @@ layout: default
   <h3 class="Bottom-bar">If you like it, spread the word! This movement only works with your help.</h3>
 </section>
 
-<section class="row Inspiration">
+<section id="inspiration" class="row Inspiration">
   <div class="Content columns small-12 medium-10 medium-centered">
-    <h2>The Inspiration</h2>
+    <h2 class="green">The Inspiration</h2>
     <div class="row">
       <div class="columns small-12 large-2">
-        <img class="Inspiration-sloane" src="http://placehold.it/200x200">
+        <img class="Inspiration-sloane" src="../images/sloane.jpg">
       </div>
       <div class="columns small-12 large-10">
         <p class="lead">
@@ -82,7 +91,7 @@ layout: default
         <p>Sloane would like to thank everyone who helped her launch this movement especially Gerard Ramos and the team at <a href="http://revelry.co/" target="_blank">Revelry.</a></p>
       </div>
       
-      <div class="columns small-12 large-4 Sidebar">
+      <div class="columns small-10 small-offset-1 end medium-12 medium-offset-0 large-4 Sidebar">
         <h2>Contact Us</h2>
         <p><strong>We’re always happy to hear from you!</strong></p>
         <p>To share your #DinnerMode story or feedback/ideas contact <a href="mailto:info@dinnermode.org">info@dinnermode.org</a></p>
@@ -93,27 +102,12 @@ layout: default
   </div>
 </section>
 
-<section class="row Social">
+<section id="conversation" class="row Social">
   <div class="Content columns small-12 medium-10 medium-centered">
     <h2>Join the Conversation</h2>
-    <dl class="tabs" data-tab>
-      <dd class="active"><a href="#panel1">Twitter</a></dd>
-      <dd><a href="#panel2">Instagram</a></dd>
-      <dd><a href="#panel3">Facebook</a></dd>
-      <dd><a href="#panel4">Tumblr</a></dd>
-    </dl>
-    <div class="tabs-content">
-      <div class="content active" id="panel1">
-        <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
-      </div>
-      <div class="content" id="panel2">
-        <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-      </div>
-      <div class="content" id="panel3">
-        <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-      </div>
-      <div class="content" id="panel4">
-        <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+      <div class="Social-links">
+        <a href="#" target="_blank" class="Social-link u-left"><i class="fa fa-facebook-square"></i></a>
+        <a href="#" target="_blank" class="Social-link u-right"><i class="fa fa-tumblr-square"></i></a>
       </div>
     </div>
   </div>
