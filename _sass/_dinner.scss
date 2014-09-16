@@ -435,6 +435,38 @@ nav {
       display: none;
     }
 }
+/* G Mobile Hacks */
+@media only screen and (max-width: 40em) {
+  nav {
+    clear:both;
+    position:relative;
+    a {
+      display:block;
+      clear:both;
+      width:100%;
+      border-bottom:1px solid #fff;
+      padding:20px 0;
+    }
+    a:last-child {
+      float:none;
+    }
+    span {
+      display: inline-block;
+      padding:20px 0;
+    }
+    .cloumn, .columns {
+      padding:0;
+      float:none;
+    }
+    .small-4 {
+      width:auto;
+    }
+    [class*="column"]+[class*="column"]:last-child {
+      float:none;
+      border-bottom:none;
+    }
+  }
+}
 
 
 
