@@ -437,9 +437,12 @@ nav {
 }
 /* G Mobile Hacks */
 @media only screen and (max-width: 40em) {
+  section {
+    bottom:50px;
+  }
   nav {
     clear:both;
-    position:relative;
+    bottom:-70px;
     a {
       display:block;
       clear:both;
