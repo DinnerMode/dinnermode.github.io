@@ -56,7 +56,7 @@ h1 {
   text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 h2 {
-  color: $dark-grey;
+  color: black;
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -112,6 +112,7 @@ a {
 a.button {
   background: $primary;
   border-radius: $all;
+  border: none;
   color: $white;
   font-size: 1.8rem;
   font-weight: normal;
@@ -121,7 +122,8 @@ a.button {
   }
   &:active,
   &:focus {
-    background: $primary-dark;
+    background: lighten($primary, 5%);
+    color: black;
     outline: 0;
   }
   &.u-right {
@@ -159,7 +161,9 @@ form.Take-challenge {
       box-shadow: none;
     }
   }
-  button {
+  input.button {
+    border: none;
+    color: $white;
     margin: 0;
     width: 100%;
   }
@@ -364,6 +368,37 @@ section {
   }
 }
 
+:target h2 {
+  -webkit-animation: highlight 2s ease;  
+  -moz-animation: highlight 2s ease;
+  animation: highlight 2s ease;
+}
+@-webkit-keyframes highlight {
+  0% { color: black; }
+  10% { color: white; }
+  100% { color: black; }
+}
+@-moz-keyframes highlight {
+  0% { color: black; }
+  10% { color: white; }
+  100% { color: black; }
+} 
+
+:target h2.green {
+  -webkit-animation: highlight_alt 2s ease;  
+  -moz-animation: highlight_alt 2s ease;
+  animation: highlight_alt 2s ease;
+}
+@-webkit-keyframes highlight_alt {
+  0% { color: black; }
+  10% { color: $primary; }
+  100% { color: black; }
+}
+@-moz-keyframes highlight_alt {
+  0% { color: black; }
+  10% { color: $primary; }
+  100% { color: black; }
+} 
 
 nav {
   background: $dark-grey;
@@ -414,6 +449,7 @@ nav {
 }
 .Inspiration-list {
   background: $light-grey;
+  overflow: hidden;
   position: relative;
   &:before,
   &:after {
@@ -439,14 +475,14 @@ nav {
 .Inspiration-sloane {
   border-radius: 50%;
   display: block;
-  height: 10rem;
+  height: 20rem;
   margin: 0 auto 1rem auto;
-  width: 10rem;
+  width: 20rem;
 }
 .Inspiration-columns {
   -webkit-columns: 50% 2;
-   -moz-columns: 50% 2;
-        columns: 50% 2;
+  -moz-columns: 50% 2;
+  columns: 50% 2;
 }
 @media only screen and (min-width: 64.063em) {
   .Inspiration-sloane {
@@ -458,6 +494,25 @@ nav {
 /** SOCIAL **/
 .Social {
   background: $primary;
+  .Social-links {
+    display: block;
+    margin: 0 auto;
+    max-width: 20rem;
+  }
+  a.Social-link {
+    display: block;
+    i {
+      color: black;
+      font-size: 10rem;
+    }
+    &:hover i {
+      color: $white;
+    }
+    &:active i,
+    &:focus i {
+      color: $primary-lighter;
+    }
+  }
 }
 
 /* FOOTER */
