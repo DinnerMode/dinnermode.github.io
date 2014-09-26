@@ -188,7 +188,7 @@ form.Take-challenge {
   padding: 0;
   counter-reset: li-counter;
   & > li {
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
     z-index:  0;
     &:before {
@@ -261,7 +261,7 @@ ol.Serif-numbers {
       left: 2rem;
       margin: 0;
       text-align: left;
-      top: 1rem;
+      top: 2rem;
     }
   }
 }
@@ -323,7 +323,7 @@ section {
 /** CONTENT **/
 .Content {
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 100rem;
 }
 
 /** HERO **/
@@ -532,10 +532,11 @@ nav {
   .Social-links {
     display: block;
     margin: 0 auto;
-    max-width: 20rem;
+    text-align: center;
   }
   a.Social-link {
-    display: block;
+    display: inline-block;
+    padding: .5rem;
     i {
       color: black;
       font-size: 10rem;
