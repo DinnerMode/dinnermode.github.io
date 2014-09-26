@@ -497,10 +497,11 @@ nav {
   .Social-links {
     display: block;
     margin: 0 auto;
-    max-width: 20rem;
+    text-align: center;
   }
   a.Social-link {
-    display: block;
+    display: inline-block;
+    padding: .5rem;
     i {
       color: black;
       font-size: 10rem;
