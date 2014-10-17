@@ -90,10 +90,15 @@ h5 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   &.lead {
-    font-size: 1.4em;
+    font-size: 1.25em;
   }
+}
+small {
+  display: block;
+  font-size: 1.2rem;
+  margin: 1.5rem auto;
 }
 
 a {
@@ -139,6 +144,14 @@ a.button {
     background: $dark-grey;
     color: $white;
   }
+}
+
+/** IMAGES **/
+.u-circle-textwrap {
+  -webkit-shape-outside:circle();
+  shape-outside: circle();
+  -webkit-shape-margin: 1rem;
+  shape-margin: 1rem;
 }
 
 /** FORMS **/
@@ -283,9 +296,9 @@ a.logo {
   background-repeat: no-repeat; 
   background-size: 100% 100%;
   display: block;
-  height: 13rem;
-  margin: 0 auto;
-  width: 15rem;
+  height: 28.5rem;
+  margin: 3rem auto 0 auto;
+  width: 30rem;
   header & {
    /* background: url(../images/dinnermode-logo_small.png); */
     background-repeat: no-repeat; 
@@ -329,37 +342,40 @@ section {
 /** HERO **/
 .Hero {
   background: url(../images/bkgd.jpg) no-repeat center center; 
-  background-size: cover;
+  background-size: auto 100%;
   color: $white;
   position: relative;
 }
 
 .Hero-content {
-  margin: 4rem auto 10rem auto;
+  margin: 9rem auto 10rem auto;
   padding: 0 2rem;
   max-width: 46em;
   text-align: center;
   .lead {
+    font-size: 1.8rem;
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
   }
 }
-@media only screen and ( min-height: 40em ){
+
+@media only screen and (min-width: 46em) {
   .Hero {
     background: url(../images/bkgd.jpg) no-repeat center center fixed; 
     background-size: cover;
     height: 100%;
   }
   .Hero-content {
-    bottom: 25%;
-    margin: 0 auto;
+    bottom: 12%;
+    left: 50%;
+    margin: 0;
+    margin-left: -23em;
     position: absolute;
   }
-}
-
-@media only screen and (min-width: 46em) {
-  .Hero-content {
-    left: 50%;
-    margin-left: -23em;
+  .Hero-content .lead {
+    font-size: 1.4em;
+  }
+    a.logo {
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 64.063em) {
@@ -478,7 +494,7 @@ nav {
   background: $primary;
 }
 
-/** INSPIRATION **/
+/** THE INSPIRATION **/
 .Inspiration {
   background: $white;
 }
@@ -510,20 +526,33 @@ nav {
 .Inspiration-sloane {
   border-radius: 50%;
   display: block;
-  height: 20rem;
+  height: 30rem;
   margin: 0 auto 1rem auto;
-  width: 20rem;
+  width: 30rem;
 }
-.Inspiration-columns {
-  -webkit-columns: 50% 2;
-  -moz-columns: 50% 2;
-  columns: 50% 2;
-}
+
 @media only screen and (min-width: 64.063em) {
   .Inspiration-sloane {
-    height: auto;
-    width: auto;
+    float: left;
+    margin: 0 2rem 0 0;
   }
+}
+
+/*** CONTACT ***/
+.Contact {
+  background: $dark-grey;
+  color: $light-grey;
+  text-align: center;
+  h2, p {
+    color: $light-grey;
+  }
+}
+
+/* PRESS */
+.Press {
+  background: $light-grey;
+  display: block;
+  text-align: center;
 }
 
 /** SOCIAL **/
@@ -549,13 +578,4 @@ nav {
       color: $primary-lighter;
     }
   }
-}
-
-/* FOOTER */
-footer {
-  background: $dark-grey;
-  color: $light-grey;
-  display: block;
-  height: 40px;
-  text-align: center;
 }
