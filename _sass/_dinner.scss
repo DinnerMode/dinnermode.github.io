@@ -620,3 +620,17 @@ nav {
     }
   }
 }
+
+/* Background video details from http://demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video and http://stackoverflow.com/questions/24983429/airbnb-video-header */
+
+
+#hero {
+z-index: -1;
+position: absolute;
+right: 0;
+left: 0;
+top: 0;
+height: 600px;
+overflow: hidden;
+min-width: 1045px;
+}
