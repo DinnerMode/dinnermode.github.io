@@ -3,7 +3,7 @@
 html {-webkit-text-size-adjust: none;background:none;}
 
 body {font-family: 'PT Sans', Arial, sans-serif; -webkit-font-smoothing: antialiased;font-weight:400;font-size:62.5%;color:#333;width:100%;
-background:none;overflow-x: hidden;overflow-y: scroll;z-index:1;-webkit-overflow-scrolling: touch;}
+background:none;overflow-x: hidden;overflow-y: auto;z-index:1;-webkit-overflow-scrolling: touch;}
 
 h1, h2, h3, h4, h5, h6 {font-weight:700;margin:0 0 0 0;}
 h1 {font-size: 5.2em;line-height: 1.2em;padding:0.6em 0 0.2em 0;color:#ffffff;}
@@ -72,7 +72,7 @@ li {font-size:1.85em;line-height:2.0em; margin-left:1.5em;color:#222222;}
 .subscribe:hover {color: #ffffff;background-color: #222222;margin-top:4px;border: 1px solid #222222;}
 
 @media screen and (max-device-width: 800px) {
-#hero { background: url(../images/poster-mobile.png) #000 no-repeat center center fixed; height:115%;-webkit-overflow-scrolling: touch;}
+#hero { background: url(../images/poster-mobile.jpg) #000 no-repeat center center fixed; height:115%;-webkit-overflow-scrolling: touch;}
 .header {width:88%;left:5%;right:5%;padding:4em 0 0 0;margin:0 auto;}
 .header p {display:none;}
 .spacer{padding-top:215%}
@@ -83,7 +83,7 @@ h3 {font-size:1.8em;}
 .signup {padding-bottom:1em;}
 .signup p {font-size:1.6em;}
 .app {padding-top:4em;}
-.logo{width:25%;margin:2em 0 2em 0;}
+.logo{width:33%;margin:2em 0 2em 0;}
 h1 {font-size:4.8em;padding-bottom: 1em;}
 .featured{margin-top: 4em;margin-bottom: 2em}
 }
