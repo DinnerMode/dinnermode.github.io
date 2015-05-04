@@ -34,7 +34,7 @@ blockquote, blockquote p {margin:1em 0; color:#666666;padding-left:1em;}
 video {display: inline-block;}
 
 .header {width:90%;max-width:400px;position:relative;float:left;left:60%;right:5%;padding:8em 0 0 1em;z-index:1;clear:both;}
-.logo img {width:150px;margin:4em 0 2em 0;z-index:-1;}
+.logo {width:150px;margin:4em 0 2em 0;z-index:-1;}
 .download img {z-index:-1;margin:1em 0 2em 0}
 .header p {color:#ffffff;font-size: 1.8em;padding:1em 0 1em 0;}
 
@@ -72,16 +72,17 @@ li {font-size:1.85em;line-height:2.0em; margin-left:1.5em;color:#222222;}
 .subscribe:hover {color: #ffffff;background-color: #222222;margin-top:4px;border: 1px solid #222222;}
 
 @media screen and (max-device-width: 800px) {
-#hero { background: url(../images/poster.png) #000 no-repeat center center fixed; }
-.header {width:90%;left:5%;right:5%;padding:4em 0 0 1em;margin:0 auto;}
+#hero { background: url(../images/poster.png) #000 no-repeat center center fixed; height:115%;}
+.header {width:88%;left:5%;right:5%;padding:4em 0 0 0;margin:0 auto;}
 .spacer{padding-top:215%}
 .entry p{font-size:1.6em;line-height:1.6em;}
-h2 {font-size:2.8;line-height: 1em;}
-h3 {font-size:1.8;}
+h2 {font-size:2.8em;line-height: 1em;}
+h3 {font-size:1.8em;}
 .logos {width:45%;}
 .signup {padding-bottom:1em;}
-.signup p {font-size:1.4em;}
+.signup p {font-size:1.6em;}
 .app {padding-top:4em;}
 .logo{width:75px;margin:2em 0 2em 0;}
 h1 {font-size:3em;}
+.featured{margin-top: 4em;margin-bottom: 2em}
 }
