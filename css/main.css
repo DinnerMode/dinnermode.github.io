@@ -34,7 +34,7 @@ blockquote, blockquote p {margin:1em 0; color:#666666;padding-left:1em;}
 #video {top: 0;position: absolute;width: 100%;}
 video {display: inline-block;}
 
-.header {width:100%;max-width:400px;position:relative;float:left;left:60%;right:5%;padding:8em 0 0 1em;z-index:1;clear:both;}
+.header {width:90%;max-width:400px;position:relative;float:left;left:60%;right:5%;padding:8em 0 0 1em;z-index:1;clear:both;}
 .header img {margin:1em 0 2em 0;z-index:-1;}
 .download img {z-index:-1;}
 .header p {color:#ffffff;font-size: 1.8em;padding:1em 0 1em 0;}
@@ -53,7 +53,8 @@ li {font-size:1.85em;line-height:2.0em; margin-left:1.5em;color:#222222;}
 /* Featured, Share, Spacer, Logos */
 .featured {width:100%;margin-top: 8em;margin-bottom: 2em;}
 .featured img {width:100%;}
-.share {width:100%; margin:0 auto;text-align: center;padding-top: 8em;}
+.app {width:100%;margin:0 auto;text-align: center;padding-top: 8em;}
+.share {width:100%; margin:0 auto;text-align: center;padding-top: 4em;}
 .spacer {padding-top:53%}
 .logos {max-width:150px;margin-left:1.5%;margin-right:1.5%;display:inline-block;text-align: center;}
 .gumroad_iframe {height:100%;}
@@ -75,6 +76,12 @@ li {font-size:1.85em;line-height:2.0em; margin-left:1.5em;color:#222222;}
 
 @media screen and (max-device-width: 800px) {
 #hero { background: url(../images/poster.png) #000 no-repeat center center fixed; }
-.header {left:5%;right:5%;}
-.spacer{padding-top:95%}
+.header {width:90%;left:5%;right:5%;padding:4em 0 0 1em;}
+.spacer{padding-top:195%}
+.entry p{font-size:1.4em;line-height:1.6em;}
+h3 {font-size:1.8;}
+.logos {width:45%;}
+.signup {padding-bottom:1em;}
+.signup p {font-size:1.4em;}
+.app {clear:both;}
 }
